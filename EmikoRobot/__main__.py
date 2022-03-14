@@ -83,13 +83,17 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ⚘ 𝘏𝘦𝘭𝘭𝘰 𝘰𝘯𝘪 🤚🤚
-ꕥ 𝘪 𝘢𝘮 𝘰𝘯𝘪𝘹𝘣𝘰𝘵 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵 + 𝘮𝘶𝘴𝘪𝘬 𝘣𝘰𝘵 [✙](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+
+ꕥ 𝘪 𝘢𝘮 𝘰𝘯𝘪𝘹𝘣𝘰𝘵 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵 + 𝘮𝘶𝘴𝘪𝘬 𝘣𝘰𝘵  [✙](https://telegra.ph/file/603c216548c7de2f1a98f.jpg)
 ────────────────────────
 × 𝘰𝘯𝘪𝘤𝘳𝘰𝘣𝘰𝘵 𝘣𝘶𝘬𝘢𝘯 𝘣𝘰𝘵 𝘣𝘪𝘢𝘴𝘢 𝘵𝘱𝘪 𝘣𝘪𝘢𝘴𝘢 𝘢𝘫𝘢
+
 × 𝘎𝘤 𝘰𝘯𝘪 https://t.me/onigank
 ────────────────────────
+
 ꕥ 𝘩𝘪𝘵 /help 𝘵𝘰 𝘴𝘦𝘦 𝘮𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥.
 """
+
 
 buttons = [
     [
