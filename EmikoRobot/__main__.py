@@ -93,17 +93,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="𝘢𝘣𝘰𝘶𝘵 𝘰𝘯𝘪𝘹𝘳𝘰𝘣𝘰𝘵", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="𝘎𝘦𝘵 𝘩𝘦𝘭𝘱", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="𝘛𝘳𝘺 𝘪𝘯𝘭𝘪𝘯𝘦!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Emiko To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="👹 𝘢𝘥𝘥 𝘰𝘯𝘪 𝘵𝘰 𝘺𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 👹", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
