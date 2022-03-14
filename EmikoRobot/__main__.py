@@ -360,15 +360,15 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
-            "\n• I can restrict users."
-            "\n• I can greet users with customizable welcome messages and even set a group's rules."
-            "\n• I have an advanced anti-flood system."
-            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
-            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
-            "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Emiko's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for EmikoRobot.",
+            text="๏ 𝘐'𝘮 𝘖𝘯𝘪𝘹𝘳𝘰𝘣𝘰𝘵 𝘢 𝘣𝘰𝘵 𝘮𝘢𝘯𝘢𝘨𝘦𝘳 𝘨𝘳𝘰𝘶p."
+            "\n• 𝘐 𝘤𝘢𝘯 𝘳𝘦𝘴𝘵𝘳𝘪𝘤𝘵 𝘶𝘴𝘦𝘳𝘴."
+            "\n• 𝘐 𝘤𝘢𝘯 𝘨𝘳𝘦𝘦𝘵 𝘶𝘴𝘦𝘳𝘴 𝘸𝘪𝘵𝘩 𝘤𝘶𝘴𝘵𝘰𝘮𝘪𝘻𝘢𝘣𝘭𝘦 𝘸𝘦𝘭𝘤𝘰𝘮𝘦 𝘮𝘦𝘴𝘴𝘢𝘨𝘦𝘴 𝘢𝘯𝘥 𝘦𝘷𝘦𝘯 𝘴𝘦𝘵 𝘢 𝘨𝘳𝘰𝘶𝘱'𝘴 𝘳𝘶𝘭𝘦𝘴."
+            "\n• 𝘐 𝘩𝘢𝘷𝘦 𝘢𝘯 𝘢𝘥𝘷𝘢𝘯𝘤𝘦𝘥 𝘢𝘯𝘵𝘪-𝘧𝘭𝘰𝘰𝘥 𝘴𝘺𝘴𝘵𝘦𝘮."
+            "\n• 𝘐 𝘤𝘢𝘯 𝘸𝘢𝘳𝘯 𝘶𝘴𝘦𝘳𝘴 𝘶𝘯𝘵𝘪𝘭 𝘵𝘩𝘦𝘺 𝘳𝘦𝘢𝘤𝘩 𝘮𝘢𝘹 𝘸𝘢𝘳𝘯𝘴, 𝘸𝘪𝘵𝘩 𝘦𝘢𝘤𝘩 𝘱𝘳𝘦𝘥𝘦𝘧𝘪𝘯𝘦𝘥 𝘢𝘤𝘵𝘪𝘰𝘯𝘴 𝘴𝘶𝘤𝘩 𝘢𝘴 𝘣𝘢𝘯, 𝘮𝘶𝘵𝘦, 𝘬𝘪𝘤𝘬, 𝘦𝘵𝘤."
+            "\n• 𝘐 𝘩𝘢𝘷𝘦 𝘢 𝘯𝘰𝘵𝘦 𝘬𝘦𝘦𝘱𝘪𝘯𝘨 𝘴𝘺𝘴𝘵𝘦𝘮, 𝘣𝘭𝘢𝘤𝘬𝘭𝘪𝘴𝘵𝘴, 𝘢𝘯𝘥 𝘦𝘷𝘦𝘯 𝘱𝘳𝘦𝘥𝘦𝘵𝘦𝘳𝘮𝘪𝘯𝘦𝘥 𝘳𝘦𝘱𝘭𝘪𝘦𝘴 𝘰𝘯 𝘤𝘦𝘳𝘵𝘢𝘪𝘯 𝘬𝘦𝘺𝘸𝘰𝘳𝘥𝘴."
+            "\n• 𝘐 𝘤𝘩𝘦𝘤𝘬 𝘧𝘰𝘳 𝘢𝘥𝘮𝘪𝘯𝘴' 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯𝘴 𝘣𝘦𝘧𝘰𝘳𝘦 𝘦𝘹𝘦𝘤𝘶𝘵𝘪𝘯𝘨 𝘢𝘯𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥 𝘢𝘯𝘥 𝘮𝘰𝘳𝘦 𝘴𝘵𝘶𝘧𝘧𝘴"
+            "\n\n_𝘖𝘯𝘪𝘹𝘳𝘰𝘣𝘰𝘵 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0"
+            "\n\n 𝘊𝘭𝘪𝘤𝘬 𝘰𝘯 𝘣𝘶𝘵𝘵𝘰𝘯 𝘣𝘦𝘭𝘭𝘰𝘸 𝘵𝘰 𝘨𝘦𝘵 𝘣𝘢𝘴𝘪𝘤 𝘩𝘦𝘭𝘱 𝘧𝘰𝘳 𝘖𝘯𝘪𝘹𝘳𝘰𝘣𝘰𝘵.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
