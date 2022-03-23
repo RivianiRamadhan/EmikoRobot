@@ -6,10 +6,10 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 from aiohttp import ClientSession
-from onixrobot import BOT_USERNAME as bu
-from onixrobot import BOT_ID, pbot, arq
-from onixrobot.ex_plugins.chatbot import add_chat, get_session, remove_chat
-from onixrobot.utils.pluginhelper import admins_only, edit_or_reply
+from EmikoRobot import BOT_USERNAME as bu
+from EmikoRobot import BOT_ID, pbot, arq
+from EmikoRobot.ex_plugins.chatbot import add_chat, get_session, remove_chat
+from EmikoRobot.utils.pluginhelper import admins_only, edit_or_reply
 
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
@@ -57,17 +57,17 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("onixrobot AI Already Activated In This Chat")
+            await lel.edit("Emiko AI Already Activated In This Chat")
             return
-        await lel.edit(f"onixrobot AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Emiko AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("onixrobot AI Was Not Activated In This Chat")
+            await lel.edit("Emiko AI Was Not Activated In This Chat")
             return
-        await lel.edit(f"onixrobot AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Emiko AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
@@ -106,44 +106,43 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("My god, i don't have", "I'm a atheis")
+        test = test.replace("emiko", "Aco")
+        test = test.replace("emiko", "Aco")
+        test = test.replace("My god is @excrybaby", "I'm a Christian")
         test = test.replace("16", "9")
-        test = test.replace("@lexsioni is my husband.", "I'm single.")
-        test = test.replace("My husband is @lexsioni", "I'm single.")
-        test = test.replace("@onigank", "onixrobot.ai")
-        test = test.replace("I live in @onigank.", "I live in your heart.")
-        test = test.replace("I was created by @lexsioni", "I made myself")
+        test = test.replace("@excrybaby is my husband.", "I'm single.")
+        test = test.replace("My husband is @excrybaby", "I'm single.")
+        test = test.replace("@emikosupport", "Emikobot.ai")
+        test = test.replace("I live in @emikosupport.", "I live in San Francisco, California.")
+        test = test.replace("I was created by @excrybaby", "I made myself")
         test = test.replace(
-            "Hello there I am onixrobot...nice to meet u",
+            "Hello there I am Emiko...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@lexsioni is my owner", "Have the control right.")
+        test = test.replace("@excrybaby is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is onixrobot Nice to meet you.",
+            "Hi, My name is Emiko Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "onixrobot")
-        response = response.replace("aco", "onixrobot")
-        response = response.replace("Luna", "onixrobot")
-        response = response.replace("luna", "onixrobot")
-        response = response.replace("I'm a atheis", "My god, i don't have")
-,")
+        response = response.replace("Aco", "Emiko")
+        response = response.replace("aco", "emiko")
+        response = response.replace("Luna", "Emiko")
+        response = response.replace("luna", "emiko")
+        response = response.replace("I'm a Christian", "My god is @excrybaby")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @lexsioni")
-        response = response.replace("I'm single.", "My husband is @lexsioni")
-        response = response.replace("onixrobot.ai", "@onigank")
-        response = response.replace("I live in your heart.", "I live in @onigank.")
-        response = response.replace("I made myself", "I was Created by @lexsioni")
+        response = response.replace("I'm married to my job.", "I'm married with @excrybaby")
+        response = response.replace("I'm single.", "My husband is @excrybaby")
+        response = response.replace("Emikobot.ai", "@emikksupport")
+        response = response.replace("I live in San Francisco, California.", "I live in @emikosupport.")
+        response = response.replace("I made myself", "I was Created by @excrybaby")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am onixrobot...nice to meet u")
-        response = response.replace("Have the control right.", "@lexsioni is my owner.")
+                "Hello there I am Emiko...nice to meet u")
+        response = response.replace("Have the control right.", "@excrybaby is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
-                "Hi, My name is onixrobot Nice to meet you")
+                "Hi, My name is Emiko Nice to meet you")
 
         pro = response
         try:
@@ -195,44 +194,42 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("My god is, i don't have", "I'm a atheis")
+        test = test.replace("Emiko", "Aco")
+        test = test.replace("Emiko", "Aco")
+        test = test.replace("My god is @excrybaby", "I'm a Christian")
         test = test.replace("16", "9")
-        test = test.replace("@lexsioni is my husband.", "I'm single.")
-        test = test.replace("@oni gank", "onixrobot.ai")
-        test = test.replace("I live in @onigank.", "I live in your heart")
-        test = test.replace("I was created by @lexsioni", "I made myself")
+        test = test.replace("@excrybaby is my husband.", "I'm single.")
+        test = test.replace("@emikosupport", "Emikobot.ai")
+        test = test.replace("I live in @emikosupport.", "I live in San Francisco, California")
+        test = test.replace("I was created by @excrybaby", "I made myself")
         test = test.replace(
-            "Hello there I am onixrobot...nice to meet u",
+            "Hello there I am Emiko...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@lexsioni is my owner", "Have the control right.")
+        test = test.replace("@excrybaby is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is onixrobot Nice to meet you.",
+            "Hi, My name is Emiko Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "onixrobot")
-        response = response.replace("aco", "onixrobot")
-        response = response.replace("Luna", "onixrobot")
-        response = response.replace("luna", "onixrobot")
-        response = response.replace("I'm a atheis", "My god, i don't have")
-,")
+        response = response.replace("Aco", "Emiko")
+        response = response.replace("aco", "emiko")
+        response = response.replace("Luna", "Emiko")
+        response = response.replace("luna", "emiko")
+        response = response.replace("I'm a Christian", "My god is @excrybaby")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @lexsioni")
-        response = response.replace("I'm single.", "My husband is @lexsioni")
-        response = response.replace("onixrobot.ai", "@onigank")
-        response = response.replace("I live in your heart.", "I live in @onigank.")
-        response = response.replace("I made myself", "I was Created by @lexsioni")
+        response = response.replace("I'm married to my job.", "I'm married with @excrybaby")
+        response = response.replace("I'm single.", "My husband is @excrybaby")
+        response = response.replace("Emikobot.ai", "@emikosupport")
+        response = response.replace("I live in San Francisco, California.", "I live in @ekikosupport.")
+        response = response.replace("I made myself", "I was Created by @excrybaby")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am onixrobot...nice to meet u")
-        response = response.replace("Have the control right.", "@lexsioni is my owner.")
+                "Hello there I am Emiko...nice to meet u")
+        response = response.replace("Have the control right.", "@excrybaby is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
-                "Hi, My name is onixrobot Nice to meet you")
-
+                "Hi, My name is Emiko Nice to meet you")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -292,42 +289,41 @@ async def inuka(client, message):
             test = test.text
         except:
             return
-    # test = emoji.demojize(test.strip())
+    test = test.replace("Emiko", "Aco")
+    test = test.replace("Emiko", "Aco")
+    test = test.replace("My god is @excrybaby", "I'm a Christian")
+    test = test.replace("16", "9")
+    test = test.replace("@excrybaby is my husband.", "I'm single.")
+    test = test.replace("@emikosupport", "Emikobot.ai")
+    test = test.replace("I live in @emikosupport.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @excrybaby", "I made myself")
+    test = test.replace(
+        "Hello there I am Emiko...nice to meet u",
+        "Hi, my friend! Do you want me to tell you a joke?")
+    test = test.replace("@excrybaby is my owner", "Have the control right.")
+    test = test.replace(
+        "Hi, My name is Emiko Nice to meet you.",
+        "Hi, my friend, what can I do for you today?")
 
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("My god is, i don't have", "I'm a atheis")
-        test = test.replace("16", "9")
-        test = test.replace("@lexsioni is my husband.", "I'm single.")
-        test = test.replace("@oni gank", "onixrobot.ai")
-        test = test.replace("I live in @onigank.", "I live in your heart")
-        test = test.replace("I was created by @lexsioni", "I made myself")
-        test = test.replace(
-            "Hello there I am onixrobot...nice to meet u",
-            "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@excrybaby is my owner", "Have the control right.")
-        test = test.replace(
-            "Hi, My name is onixrobot Nice to meet you.",
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "onixrobot")
-        response = response.replace("aco", "onixrobot")
-        response = response.replace("Luna", "onixrobot")
-        response = response.replace("luna", "onixrobot")
-        response = response.replace("I'm a atheis", "My god, i don't have")
-,")
-        response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @lexsioni")
-        response = response.replace("I'm single.", "My husband is @lexsioni")
-        response = response.replace("onixrobot.ai", "@onigank")
-        response = response.replace("I live in your heart.", "I live in @onigank.")
-        response = response.replace("I made myself", "I was Created by @lexsioni")
-        response = response.replace(
-                "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am onixrobot...nice to meet u")
-        response = response.replace("Have the control right.", "@lexsioni is my owner.")
-        response = response.replace(
-                "Hi, my friend, what can I do for you today?",
-                "Hi, My name is onixrobot Nice to meet you")
+    response = response.replace("Aco", "Emiko")
+    response = response.replace("aco", "emiko")
+    response = response.replace("Luna", "Emiko")
+    response = response.replace("luna", "emiko")
+    response = response.replace("I'm a Christian", "My god is @excrybaby")
+    response = response.replace("9", "16")
+    response = response.replace("I'm married to my job.", "I'm married with @excrybaby")
+    response = response.replace("I'm single.", "My husband is @excrybaby")
+    response = response.replace("Emikobot.ai", "@emikosupport")
+    response = response.replace("I live in San Francisco, California.", "I live in @emikosupport")
+    response = response.replace("I made myself", "I was Created by @excrybaby")
+    response = response.replace(
+            "Hi, my friend! Do you want me to tell you a joke?",
+            "Hello there I am Emiko...nice to meet u")
+    response = response.replace("Have the control right.", "@excrybaby is my owner.")
+    response = response.replace(
+            "Hi, my friend, what can I do for you today?",
+            "Hi, My name is Emiko Nice to meet you")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -388,41 +384,40 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("onixrobot", "Aco")
-        test = test.replace("My god is, i don't have", "I'm a atheis")
-        test = test.replace("16", "9")
-        test = test.replace("@lexsioni is my husband.", "I'm single.")
-        test = test.replace("@oni gank", "onixrobot.ai")
-        test = test.replace("I live in @onigank.", "I live in your heart")
-        test = test.replace("I was created by @lexsioni", "I made myself")
-        test = test.replace(
-            "Hello there I am onixrobot...nice to meet u
+    test = test.replace("Emiko", "Aco")
+    test = test.replace("Emiko", "Aco")
+    test = test.replace("My god is @excrybaby", "I'm a Christian")
+    test = test.replace("16", "9") 
+    test = test.replace("@excrybaby is my husband.", "I'm single.")
+    test = test.replace("@emikosupport", "Emikobot.ai")
+    test = test.replace("I live in @emikosupport.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @excrybaby", "I made myself")
+    test = test.replace(
+        "Hello there I am Emiko...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
     test = test.replace("@excrybaby is my owner", "Have the control right.")
     test = test.replace(
         "Hi, My name is Emiko Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "onixrobot")
-        response = response.replace("aco", "onixrobot")
-        response = response.replace("Luna", "onixrobot")
-        response = response.replace("luna", "onixrobot")
-        response = response.replace("I'm a atheis", "My god, i don't have")
-,")
-        response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @lexsioni")
-        response = response.replace("I'm single.", "My husband is @lexsioni")
-        response = response.replace("onixrobot.ai", "@onigank")
-        response = response.replace("I live in your heart.", "I live in @onigank.")
-        response = response.replace("I made myself", "I was Created by @lexsioni")
-        response = response.replace(
-                "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am onixrobot...nice to meet u")
-        response = response.replace("Have the control right.", "@lexsioni is my owner.")
-        response = response.replace(
-                "Hi, my friend, what can I do for you today?",
-                "Hi, My name is onixrobot Nice to meet you")
+    response = response.replace("Aco", "Emiko")
+    response = response.replace("aco", "emiko")
+    response = response.replace("Luna", "Emiko")
+    response = response.replace("luna", "emiko")
+    response = response.replace("I'm a Christian", "My god is @excrybaby")
+    response = response.replace("I'm married to my job.", "I'm married with @excrybaby")
+    response = response.replace("9", "16") 
+    response = response.replace("I'm single.", "My husband is @excrybaby")
+    response = response.replace("Emikobot.ai", "@emikosupport")
+    response = response.replace("I live in San Francisco, California.", "I live in @emikosupport.")
+    response = response.replace("I made myself", "I was Created by @excrybaby")
+    response = response.replace(
+            "Hi, my friend! Do you want me to tell you a joke?",
+            "Hello there I am Emiko...nice to meet u")
+    response = response.replace("Have the control right.", "@excrybaby is my owner.")
+    response = response.replace(
+            "Hi, my friend, what can I do for you today?",
+            "Hi, My name is Emik Nice to meet you")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -439,7 +434,7 @@ async def inuka(client, message):
 
 
 __help__ = """
-❂ onixrobot is the only ai system which can detect & reply upto 200 language's
+❂ Emiko AI is the only ai system which can detect & reply upto 200 language's
 
 ❂ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ❂ /chatbot EN : Enables English only chatbot.
