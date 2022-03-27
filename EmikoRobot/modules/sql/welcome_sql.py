@@ -72,7 +72,6 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} Si paling jelek",
     "{first} Si paling jelek",
     "{first} Si paling jelek",
-
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
